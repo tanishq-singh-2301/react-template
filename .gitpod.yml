@@ -1,0 +1,10 @@
+tasks:
+  - name: Web App
+    init: yarn install
+    command: yarn start
+
+ports:
+  - name: Web App
+    port: 3000
+    visibility: private
+    onOpen: notify
